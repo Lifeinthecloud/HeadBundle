@@ -1,7 +1,7 @@
-Ecurueil Virtuel's KeywordBundle
+Ecurueil Virtuel's HeadBundle
 =====================
 
-`KeywordBundle` provides while manipulating text retrieve keywords
+`HeadBundle`
 
 Installation
 ============

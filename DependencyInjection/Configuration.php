@@ -1,6 +1,6 @@
 <?php
 
-namespace Lifeinthecloud\KeywordBundle\DependencyInjection;
+namespace Lifeinthecloud\HeadBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
