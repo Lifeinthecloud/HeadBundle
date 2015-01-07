@@ -29,6 +29,8 @@ class HeadService
                 'http-equiv' => array(
                     #update: remplacement de content-language par Content-Type, et "utf" en lettre capitales par nicolas le 19052008
                     'Content-Type' => 'text/html; charset=UTF-8',
+                    'X-UA-Compatible' => 'width=device-width, initial-scale=1',
+                    'viewport' => 'IE=edge',
                     'Content-language' => 'fr-FR',
                     'Robots' => 'all,follow,index',
                     'expires' => '',
@@ -39,8 +41,8 @@ class HeadService
                     'ISBN' => '',
                 ),
                 'name' => array(
-                    'title' => 'iZite : Création de site internet de rap français ',
-                    'keywords' => 'izit, izite, iZite, site, internet, web, gratuit, creation, création, musique, rap, freestyle, français, francais, groupe, officiel, inscription, gratuite, rapide, rnb, blog, clips, galerie, photos, videos, youtube, dailymotion, vimeo, bong, google, Yahoo!, référencement, web, personnalisable, qualité, simple, petit prix, discount, DARCHE, simple, développement',
+                    'title' => 'iZite : Création de site internet ',
+                    'keywords' => 'lifeinthecloud, Life in the cloud, Cloud, DARCHE, simple, développement',
                     'description' => 'Ma description',
                     'author' => 'Antoine Darche',
                     'copyright' => 'Antoine Darche 2009',
@@ -302,6 +304,7 @@ class HeadService
         if ($code!=='')
             $h.= "<script type=\"text/javascript\">".$code."</script>\r\n";
         $h = substr($h, 0, -2);
+
         return $h;
     }
 
