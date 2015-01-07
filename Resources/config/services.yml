@@ -1,0 +1,3 @@
+services:
+    lifeinthecloud_head.service:
+        class: Lifeinthecloud\HeadBundle\Service\HeadService
