@@ -29,8 +29,7 @@ class HeadService
                 'http-equiv' => array(
                     #update: remplacement de content-language par Content-Type, et "utf" en lettre capitales par nicolas le 19052008
                     'Content-Type' => 'text/html; charset=UTF-8',
-                    'X-UA-Compatible' => 'width=device-width, initial-scale=1',
-                    'viewport' => 'IE=edge',
+                    'X-UA-Compatible' => 'IE=edge',
                     'Content-language' => 'fr-FR',
                     'Robots' => 'all,follow,index',
                     'expires' => '',
@@ -41,6 +40,7 @@ class HeadService
                     'ISBN' => '',
                 ),
                 'name' => array(
+                    'viewport' => 'width=device-width, initial-scale=1',
                     'title' => 'iZite : Création de site internet ',
                     'keywords' => 'lifeinthecloud, Life in the cloud, Cloud, DARCHE, simple, développement',
                     'description' => 'Ma description',
