@@ -2,12 +2,12 @@
 
 namespace Lifeinthecloud\HeadBundle\Service;
 
-use Symfony\Component\HttpKernel\Config\FileLocator;
-
 /**
  * HeadService
  * Classe de balise HEAD
  * Générateur de balises d'en-tête HEAD
+ *
+ * @package Lifeinthecloud\HeadBundle\Service
  *
  * @version 1.1
  * @date 07/01/2015
