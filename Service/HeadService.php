@@ -2,16 +2,16 @@
 
 namespace Lifeinthecloud\HeadBundle\Service;
 
-use Lifeinthecloud\KeywordBundle\Exception\KeywordException;
 use Symfony\Component\HttpKernel\Config\FileLocator;
 
 /**
+ * HeadService
  * Classe de balise HEAD
  * Générateur de balises d'en-tête HEAD
  *
  * @version 1.1
  * @date 07/01/2015
- * @author Antoine DARCHE & Grégory DARCHE
+ * @author Antoine DARCHE & Grégory DARCHE (Life in the cloud)
  * @organisation Lifeinthecloud
  * @url http://lifeinthecloud.fr
  */
