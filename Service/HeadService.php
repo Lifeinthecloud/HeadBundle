@@ -21,6 +21,14 @@ class HeadService
 
     public function __construct()
     {
+        $this->init();
+    }
+    
+    /*
+     * Initialize the Elements needed by default
+     */
+    public function init()
+    {
         $this->elements = array(
             # Commentaires
             'comments' => "<!-- ".date('Y-d-m H:m:s')." -->\r\n",
