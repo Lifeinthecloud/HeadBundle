@@ -1,13 +1,13 @@
 <?php
 
-namespace Lifeinthecloud\HeadBundle\Service;
+namespace LITC\HeadBundle\Service;
 
 /**
  * HeadService
  * Classe de balise HEAD
  * Générateur de balises d'en-tête HEAD
  *
- * @package Lifeinthecloud\HeadBundle\Service
+ * @package LITC\HeadBundle\Service
  *
  * @version 1.1
  * @date 07/01/2015

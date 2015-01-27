@@ -1,9 +1,9 @@
 <?php
 
-namespace Lifeinthecloud\HeadBundle;
+namespace LITC\HeadBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class LifeinthecloudHeadBundle extends Bundle
+class LITCHeadBundle extends Bundle
 {
 }
