@@ -66,6 +66,9 @@ class HeadService
             ),
             # Link
             'link' => array(
+                'rel' => array(
+                    'canonical' => 'http://'
+                ),
                 'favicon' => 'favicon.png',
                 'stylesheet' => array(
                     'files' => array(
@@ -200,6 +203,17 @@ class HeadService
         $this->elements['link']['favicon'] = $file;
     }
 
+    /**
+     * setCanonical
+     * Définir la balise LINK CANONICAL
+     *
+     * @param $file   (string)  URL cannonique
+     */
+    public function setCanonical($url)
+    {
+        $this->elements['link']['rel']['canonical'] = $url;
+    }
+
 
     #----------------------------------------------------------------------------
     # Fonctions feuilles et scripts Javascript et CSS
@@ -292,6 +306,8 @@ class HeadService
                 $h.= "<link rel=\"stylesheet\" type=\"text/css\" href=\"".$value."\" media=\"".$media."\" />\r\n";
             }
         }
+        if (!empty($this->elements['link']['rel']['canonical']))
+            $h.= "<link rel=\"canonical\" href=\"".$this->elements['link']['rel']['canonical']."\" />\r\n";
         if (!empty($this->elements['link']['favicon']))
             $h.= "<link rel=\"shortcut icon\" href=\"".$this->elements['link']['favicon']."\" />\r\n";
         $code='';
